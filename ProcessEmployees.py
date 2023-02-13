@@ -24,7 +24,7 @@ employee_dict = {}
 
 #use a loop to iterate through the csv file
 for row in reader:
-    if row[3] == "Marketing":
+    if row[3] == "Marketing" and row[4] == "CSR":
         name = row[1] + ' ' + row[2]
         print("Manager Name: ", name, " Current Salary: $", row[5], sep='')
         #check if the employee fits the search criteria
